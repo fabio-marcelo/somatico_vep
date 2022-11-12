@@ -102,26 +102,26 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
   * Rodar o vep
     * as flags utilizadas são:
     
-| Flag                  | Descrição                                                  |
-| --------------------- |:----------------------------------------------------------:|
-| -i                    | arquivo CF input                                           | 
-| -o                    | arquivo formato .tsv output                                |   
-| --fork                | número de threads                                          |
-| --dir_cache           | diretório de cache                                         |
-| --fasta               | sequência referência                                       |
-| --cache               | habilita uso do cache                                      |
-| --offline             | roda sem uso de conexão com internet                       |
-| --assembly            | versão da montagem                                         |
-| --refseq              | esepcificque esta opção caso tenha instalado refseq cache |
-| --pick                | Escolha uma linha ou bloco de dados de consequência por variante |
-| --pick_allele         | escolhe uma linha ou bloco de dados de consequência por alelo variante |
-| --force_overwrite     | escreve sobre arquivo existente                           |
-| --tab                 | output em formato tabular                                              |
-| --symbol              | adiciona símbolo dos genes                                             |
+| Parâmetros            | Descrição                                                                              |
+| --------------------- |:--------------------------------------------------------------------------------------:|
+| -i                    | arquivo CF input                                                                       | 
+| -o                    | arquivo formato .tsv output                                                            |   
+| --fork                | número de threads                                                                      |
+| --dir_cache           | diretório de cache                                                                     |
+| --fasta               | sequência referência                                                                   |
+| --cache               | habilita uso do cache                                                                  |
+| --offline             | roda sem uso de conexão com internet                                                   |
+| --assembly            | versão da montagem                                                                     |
+| --refseq              | esepcificque esta opção caso tenha instalado refseq cache                              |
+| --pick                | Escolha uma linha ou bloco de dados de consequência por variante                       |
+| --pick_allele         | escolhe uma linha ou bloco de dados de consequência por alelo variante                 |
+| --force_overwrite     | escreve sobre arquivo existente                                                        |
+| --tab                 | output em formato tabular                                                              |
+| --symbol              | adiciona símbolo dos genes                                                             |
 | --check_existing      | Verifica a existência de variantes conhecidas que estão co-localizadas com sua entrada |
 | --variant_class       | Fornce a classe de variante da Sequence Ontology                                       |
-| --everything          |                                                           |
-| --filter_common       |                                                           |
+| --everything          | Busca todas as colunas                                                                 |
+| --filter_common       | Exclui variantes com frequência > 1% no banco 1000 geomas                              |
   
   ```bash
   %%bash
