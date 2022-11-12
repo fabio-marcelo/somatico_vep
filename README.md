@@ -113,13 +113,13 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
 | --offline             | roda sem uso de conexão com internet                       |
 | --assembly            | versão da montagem                                         |
 | --refseq              | esepcificque esta opção caso tenha instalado refseq cache |
-| --pick                |                                                           |
-| --pick_allele         |                                                           |
-| --force_overwrite     |                                                           |
-| --tab                 |                                                           |
-| --symbol              |                                                           |
-| --check_existing      |                                                           |
-| --variant_class       |                                                           |
+| --pick                | Escolha uma linha ou bloco de dados de consequência por variante |
+| --pick_allele         | escolhe uma linha ou bloco de dados de consequência por alelo variante |
+| --force_overwrite     | escreve sobre arquivo existente                           |
+| --tab                 | output em formato tabular                                              |
+| --symbol              | adiciona símbolo dos genes                                             |
+| --check_existing      | Verifica a existência de variantes conhecidas que estão co-localizadas com sua entrada |
+| --variant_class       | Fornce a classe de variante da Sequence Ontology                                       |
 | --everything          |                                                           |
 | --filter_common       |                                                           |
   
@@ -127,10 +127,10 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
   %%bash
   ./ensembl-vep-105.0/vep  \
     --fork 3 \
-    -i /content/drive/Shareddrives/T4-2022/homo_sapiens_refseq/105_GRCh37/WP312.filtered.vcf.gz \
-    -o /content/drive/Shareddrives/T4-2022/FabioLima/somatico/WP312.filtered.vcf.tsv \
-    --dir_cache /content/drive/Shareddrives/T4-2022/ \
-    --fasta /content/drive/Shareddrives/T4-2022/homo_sapiens_refseq/Homo_sapiens_assembly19.fasta \
+    -i /path_to_file/file_name.vcf.gz \
+    -o /path_to_file/output.vcf.tsv \
+    --dir_cache /path_to_dir/dir_name/ \
+    --fasta /path_to_file/file_name.fasta \
     --cache --offline --assembly GRCh37 --refseq  \
     --pick --pick_allele --force_overwrite --tab --symbol --check_existing --variant_class --everything --filter_common \
     --fields  "Uploaded_variation,Location,Allele,Existing_variation,HGVSc,HGVSp,SYMBOL,Consequence,IND,ZYG,Amino_acids,CLIN_SIG,PolyPhen,SIFT,VARIANT_CLASS,FREQS" \
