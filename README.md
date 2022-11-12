@@ -127,10 +127,10 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
     --pick --pick_allele --force_overwrite --tab --symbol --check_existing --variant_class --everything --filter_common \
     --fields  "Uploaded_variation,Location,Allele,Existing_variation,HGVSc,HGVSp,SYMBOL,Consequence,IND,ZYG,Amino_acids,CLIN_SIG,PolyPhen,SIFT,VARIANT_CLASS,FREQS" \
     --individual all
-
   ```
   
-    * Visualizar rapidamente o arquivo gerado
+  
+   * Visualizar rapidamente o arquivo gerado
     
         
     
