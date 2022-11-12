@@ -89,3 +89,23 @@ For full option documentation see:
 http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
   ```
   
+8. Anotação do arquivo VCF
+  * A documentação pode ser consultada em https://www.ensembl.org/info/docs/tools/vep/script/index.html
+  * Rodar o vep
+    * as flags utilizadas são:
+      * -i 
+  ```
+  %%bash
+  ./ensembl-vep-105.0/vep  \
+    --fork 3 \
+    -i /content/drive/Shareddrives/T4-2022/homo_sapiens_refseq/105_GRCh37/WP312.filtered.vcf.gz \
+    -o /content/drive/Shareddrives/T4-2022/FabioLima/somatico/WP312.filtered.vcf.tsv \
+    --dir_cache /content/drive/Shareddrives/T4-2022/ \
+    --fasta /content/drive/Shareddrives/T4-2022/homo_sapiens_refseq/Homo_sapiens_assembly19.fasta \
+    --cache --offline --assembly GRCh37 --refseq  \
+    --pick --pick_allele --force_overwrite --tab --symbol --check_existing --variant_class --everything --filter_common \
+    --fields  "Uploaded_variation,Location,Allele,Existing_variation,HGVSc,HGVSp,SYMBOL,Consequence,IND,ZYG,Amino_acids,CLIN_SIG,PolyPhen,SIFT,VARIANT_CLASS,FREQS" \
+    --individual all
+
+  ```
+    * Visualizar rapidamente o arquivo gerado
