@@ -1,13 +1,30 @@
 # somatico_vep :dna:
 Passo a passo de como anotar um arquivo VCF utilizando o Ensembl Variant Effect Predictor (VEP) através do google colab e google drive.
 
+# Conteúdo
+1. [Requisitos](#requisitos)
+2. [Obtenção do arquivo VCF](#vcf)
+3. [Anotação do arquivo VCF](#anotacao)
+
+
+<div id='requisitos'/>  
+
 ## Requisitos
   * Acesso à internet
   * Conta google
   * Arquivo VCF 
 
+<div id='requisitos'/>
+
+<div id='vcf'/>
+
 ## Obtenção do arquivo VCF
 Realizar as análises de acordo com o tutorial disponibilizado em https://github.com/renatopuga/somatico.git
+
+<div id='vcf'/>
+
+
+<div id='anotacao'/>
 
 ## Anotação do arquivo VCF
 1. Fazer log in em sua conta google
@@ -165,3 +182,5 @@ df = pd.read_csv('WP312.filtered.vcf.tsv', sep='\t', skiprows=38, header = 0) # 
 df = pd.DataFrame(df)                                                         # transformar em dataframe
 df                                                                            # visualizar
 ```
+
+<div id='anotacao'/>
