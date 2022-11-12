@@ -93,6 +93,7 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
   * A documentação pode ser consultada em https://www.ensembl.org/info/docs/tools/vep/script/index.html
   * Rodar o vep
     * as flags utilizadas são:
+    
 | Flag                  | Descrição                                                  |
 | --------------------- |:----------------------------------------------------------:|
 | -i                    | arquivo CF input                                           | 
