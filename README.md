@@ -95,9 +95,9 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
     * as flags utilizadas são:
       | Flag          | Descrição  |
     | ------------- |:---------:|
-    | Tax4Fun       | SILVA     | 
-    | PICRUSt       | Greengenes|   
-    | Piphillin     | KEGG and BioCyc|  
+    | -i        | arquivo CF input     | 
+    | -o       | arquivo formato .tsv output|   
+    | --fork     | |  
   ```
   %%bash
   ./ensembl-vep-105.0/vep  \
