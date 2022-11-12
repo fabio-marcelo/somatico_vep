@@ -93,26 +93,26 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
   * A documentação pode ser consultada em https://www.ensembl.org/info/docs/tools/vep/script/index.html
   * Rodar o vep
     * as flags utilizadas são:
-    | Flag                  | Descrição                                                  |
-    | --------------------- |:----------------------------------------------------------:|
-    | -i                    | arquivo CF input                                           | 
-    | -o                    | arquivo formato .tsv output                                |   
-    | --fork                | número de threads                                          |
-    | --dir_cache           | diretório de cache                                         |
-    | --fasta               | sequência referência                                       |
-    | --cache               | habilita uso do cache                                      |
-    | --offline             | roda sem uso de conexão com internet                       |
-    | --assembly            | versão da montagem                                         |
-    | --refseq              | esepcificque esta opção caso tenha instalado refseq cache |
-    | --pick                |                                                           |
-    | --pick_allele         |                                                           |
-    | --force_overwrite     |                                                           |
-    | --tab                 |                                                           |
-    | --symbol              |                                                           |
-    | --check_existing      |                                                           |
-    | --variant_class       |                                                           |
-    | --everything          |                                                           |
-    | --filter_common       |                                                           |
+| Flag                  | Descrição                                                  |
+| --------------------- |:----------------------------------------------------------:|
+| -i                    | arquivo CF input                                           | 
+| -o                    | arquivo formato .tsv output                                |   
+| --fork                | número de threads                                          |
+| --dir_cache           | diretório de cache                                         |
+| --fasta               | sequência referência                                       |
+| --cache               | habilita uso do cache                                      |
+| --offline             | roda sem uso de conexão com internet                       |
+| --assembly            | versão da montagem                                         |
+| --refseq              | esepcificque esta opção caso tenha instalado refseq cache |
+| --pick                |                                                           |
+| --pick_allele         |                                                           |
+| --force_overwrite     |                                                           |
+| --tab                 |                                                           |
+| --symbol              |                                                           |
+| --check_existing      |                                                           |
+| --variant_class       |                                                           |
+| --everything          |                                                           |
+| --filter_common       |                                                           |
   ```
   %%bash
   ./ensembl-vep-105.0/vep  \
