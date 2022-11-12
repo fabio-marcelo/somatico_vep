@@ -38,7 +38,7 @@ Um exemplo é fornecido nos arquivos deste repositório (*WP312.filtered.vcf.gz*
   ```
   
 4. Criar um diretório para executar as análises
-  ```shell
+  ```sh
   !mkdir somatico                         # criar diretório
   %cd somatico                            # entrar definitivamente no diretório
   ```
