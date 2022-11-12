@@ -170,8 +170,10 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
 # ver arquivo output
 !head -n 39 filename.tsv
 ```
+
     
-    * Visualizar o arquivo em formato dataframe usando pandas
+   * Visualizar o arquivo em formato dataframe usando pandas
+    
     
 ```bash
 !pip install pandas          # instalar a biblioteca pandas
