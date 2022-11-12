@@ -1,7 +1,7 @@
 # somatico_vep :dna:
 Passo a passo de como anotar um arquivo VCF utilizando o Ensembl Variant Effect Predictor (VEP) através do google colab e google drive.
 
-# Conteúdo
+## Conteúdo
 1. [Requisitos](#requisitos)
 2. [Obtenção do arquivo VCF](#vcf)
 3. [Anotação do arquivo VCF](#anotacao)
