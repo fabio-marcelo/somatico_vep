@@ -129,3 +129,14 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
 
   ```
     * Visualizar rapidamente o arquivo gerado
+    ```
+    # ver arquivo output
+    !head -n 39 WP312.filtered.vcf.tsv
+    ```
+    
+    * Visualizar o arquivo em formato dataframe usando pandas
+    ```
+    !pip install pandas
+import pandas as pd
+import csv
+    ```
