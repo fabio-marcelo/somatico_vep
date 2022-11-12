@@ -128,12 +128,13 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
     --individual all
 
   ```
+  
     * Visualizar rapidamente o arquivo gerado
+    
+        
     
     ```
     # ver arquivo output
-    
-    ```
     !head -n 39 WP312.filtered.vcf.tsv
     ```
     
