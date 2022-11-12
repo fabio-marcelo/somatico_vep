@@ -21,6 +21,8 @@ Passo a passo de como anotar um arquivo VCF utilizando o Ensembl Variant Effect 
 ## Obtenção do arquivo VCF
 Realizar as análises de acordo com o tutorial disponibilizado em https://github.com/renatopuga/somatico.git
 
+Um exemplo é fornecido nos arquivos deste repositório (*WP312.filtered.vcf.gz*)
+
 <div id='vcf'/>
 
 
