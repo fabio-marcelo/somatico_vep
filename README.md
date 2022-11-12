@@ -136,7 +136,13 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
     
     * Visualizar o arquivo em formato dataframe usando pandas
     ```
-    !pip install pandas
-import pandas as pd
-import csv
+    !pip install pandas          # instalar a biblioteca pandas
+    import pandas as pd          # importar a biblioteca
+    import csv                   # importar a biblioteca para leitura do arquivo tsv
+    ```
+    
+    ```python
+    df = pd.read_csv('WP312.filtered.vcf.tsv', sep='\t', skiprows=38, header = 0) # importar o arquivo
+    df = pd.DataFrame(df)                                                         # transformar em dataframe
+    df                                                                            # visualizar
     ```
