@@ -125,7 +125,7 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
     * as flags utilizadas são:
     
 | Parâmetros            | Descrição                                                                              |
-| --------------------- |:--------------------------------------------------------------------------------------:|
+| :-------------------- |:---------------------------------------------------------------------------------------|
 | -i                    | arquivo CF input                                                                       | 
 | -o                    | arquivo formato .tsv output                                                            |   
 | --fork                | número de threads                                                                      |
