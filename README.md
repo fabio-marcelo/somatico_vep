@@ -93,7 +93,11 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
   * A documentação pode ser consultada em https://www.ensembl.org/info/docs/tools/vep/script/index.html
   * Rodar o vep
     * as flags utilizadas são:
-      * -i 
+      | Flag          | Descrição  |
+    | ------------- |:---------:|
+    | Tax4Fun       | SILVA     | 
+    | PICRUSt       | Greengenes|   
+    | Piphillin     | KEGG and BioCyc|  
   ```
   %%bash
   ./ensembl-vep-105.0/vep  \
