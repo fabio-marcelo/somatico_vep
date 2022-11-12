@@ -97,7 +97,22 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
     | ------------- |:---------:|
     | -i        | arquivo CF input     | 
     | -o       | arquivo formato .tsv output|   
-    | --fork     | |  
+    | --fork     | número de threads|
+    | --dir_cache | diretório de cache |
+    | --fasta | sequência referência |
+    | --cache | habilita uso do cache |
+    | --offline | roda sem uso de conexão com internet |
+    | --assembly | 
+    | --refseq  
+    | --pick 
+    | --pick_allele 
+    | --force_overwrite 
+    | --tab 
+    | --symbol 
+    | --check_existing 
+    | --variant_class 
+    | --everything 
+    | --filter_common
   ```
   %%bash
   ./ensembl-vep-105.0/vep  \
