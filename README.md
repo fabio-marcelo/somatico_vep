@@ -8,48 +8,56 @@ Realizar as análises de acordo com o tutorial disponibilizado em https://github
 1. Fazer log in em sua conta google
 2. Abrir um novo notebook no google colab (https://colab.research.google.com/)
 3. Montar o google drive
-  ```
+  ```bash
   from google.colab import drive          # importar a biblioteca
   drive.mount('/content/drive')           # montar o drive
   ```
+  
 4. Criar um diretório para executar as análises
-  ```
+  ```bash
   !mkdir somatico                         # criar diretório
   %cd somatico                            # entrar definitivamente no diretório
   ```
+  
 5. Para verificar se está dentro do diretório
-  ```
+  ```bash
   %%bash
   pwd
   ```
+  
 6. Instalar o VEP
   * Instalar as dependências
-  ```
+  ```bash
   %%bash
   sudo apt install unzip curl git libmodule-build-perl libdbi-perl libdbd-mysql-perl build-essential zlib1g-dev
   ```
+  
   * Download do release esembl-vep 105.0
-  ```
+  ```bash
   %%bash
   wget -c https://github.com/Ensembl/ensembl-vep/archive/refs/tags/105.0.tar.gz
   ```
+  
   * Descompactar o releaase
-  ```
+  ```bash
   %%bash
   tar -zxvf 105.0.tar.gz
   ```
+  
   * Entrar no diretório e rodar a instalação
-  ```
+  ```bash
   %%bash
   cd ensembl-vep-105.0
   ./INSTALL.pl --NO_UPDATE  
   ```
+  
 7. Testar a instalação
-  ```
+  ```bash
   %%bash
   cd ensembl-vep-105.0
   ./vep 
   ```
+  
   O resultado esperado é:
   ```
   #----------------------------------#
@@ -115,7 +123,7 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
 | --everything          |                                                           |
 | --filter_common       |                                                           |
   
-  ```
+  ```bash
   %%bash
   ./ensembl-vep-105.0/vep  \
     --fork 3 \
@@ -134,20 +142,20 @@ http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
     
         
     
-```
+```bash
 # ver arquivo output
 !head -n 39 WP312.filtered.vcf.tsv
 ```
     
     * Visualizar o arquivo em formato dataframe usando pandas
     
-```
+```bash
 !pip install pandas          # instalar a biblioteca pandas
 import pandas as pd          # importar a biblioteca
 import csv                   # importar a biblioteca para leitura do arquivo tsv
 ```
     
-```
+```python
 df = pd.read_csv('WP312.filtered.vcf.tsv', sep='\t', skiprows=38, header = 0) # importar o arquivo
 df = pd.DataFrame(df)                                                         # transformar em dataframe
 df                                                                            # visualizar
